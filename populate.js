@@ -4,6 +4,7 @@ const Product = require("./models/product");
 
 const jsonProducts = require("./products.json");
 
+//deletes and creates new products using the products from jsonProducts every time it is run
 const start = async () => {
   try {
     await connetDB(process.env.MONGO_URI);
